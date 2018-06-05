@@ -36,8 +36,14 @@ function user_setup()
         'Stonega II', 'Waterga II', 'Aeroga II', 'Firaga II', 'Blizzaga II', 'Thundaga II'}
 
     -- Special Augmented Gear
-    MerlinicBurst = { name="Merlinic Crackows", augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst dmg.+10%','VIT+2','Mag. Acc.+10','"Mag.Atk.Bns."+12' }}
-    MerlinicDrain = { name="Merlinic Crackows", augments={'Mag. Acc.+12 "Mag.Atk.Bns."+12','"Drain" and "Aspir" potency +10','MND+9' }}
+    MerlinicBurst = {
+        name="Merlinic Crackows",
+        augments={'Mag. Acc.+22 "Mag.Atk.Bns."+22','Magic burst dmg.+10%','VIT+2','Mag. Acc.+10','"Mag.Atk.Bns."+12' }
+    }
+    MerlinicDrain = {
+        name="Merlinic Crackows",
+        augments={'Mag. Acc.+12 "Mag.Atk.Bns."+12','"Drain" and "Aspir" potency +10','MND+9' }
+    }
 
     -- Additional local binds
 	-- CTRL + `
@@ -129,7 +135,7 @@ function init_gear_sets()
     ---- Midcast Sets ----
 
     sets.midcast.FastRecast = {
-        head="Nahtirah Hat",ear2="Loquacious Earring",ear2="Etiolation Earring",
+        head="Nahtirah Hat",ear1="Loquacious Earring",ear2="Etiolation Earring",
         body="Vanir Cotehardie",hands="Bokwus Gloves",ring1="Prolix Ring",
         back="Swith Cape",waist="Goading Belt",legs="Hagondes Pants",feet="Hagondes Sabots"}
 
@@ -142,10 +148,10 @@ function init_gear_sets()
 
     sets.midcast['Enhancing Magic'] = {
         neck="Colossus's Torque", head="Befouled Crown", ear1="Andoaa Earring",
-        body="Manasa Chasuble",hands="Ayao's Gages", legs="Telchine Braconi", waist="Olympus Sash",
-        legs="Portent Pants"}
+        body="Manasa Chasuble",hands="Ayao's Gages", legs="Telchine Braconi", waist="Olympus Sash"}
 
-    sets.midcast['Refresh'] = set_combine(sets.midcast['Enhancing Magic'], {feet="Inspirited Boots", waist="Gishdubar Sash"})
+    sets.midcast['Refresh'] = set_combine(sets.midcast['Enhancing Magic'], {
+        feet="Inspirited Boots", waist="Gishdubar Sash"})
 
     sets.midcast.Stoneskin = set_combine(sets.midcast['Enhancing Magic'], {waist="Siegel Sash"})
 
@@ -165,8 +171,6 @@ function init_gear_sets()
         head="Striga Crown",neck="Erra Pendant",ear1="Psystorm Earring",ear2="Lifestorm Earring",
         body="Psycloth Vest",hands="Merlinic Dastanas",ring1="Strendu Ring",ring2="Sangoma Ring",
         back="Bane Cape",waist="Fucho-no-Obi",legs="Telchine Braconi",feet=MerlinicDrain}
-
-	--[head="Nahtirah Hat" hands="Yaoyotl Gloves" ring1="Excelsis Ring" ring2="Sangoma Ring", legs="Bokwus Slops" feet="Wicce Sabots"]
 
     sets.midcast.Aspir = sets.midcast.Drain
 
@@ -334,7 +338,6 @@ end
 
 -- Set eventArgs.handled to true if we don't want any automatic gear equipping to be done.
 function job_midcast(spell, action, spellMap, eventArgs)
-
 end
 
 function job_post_midcast(spell, action, spellMap, eventArgs)
