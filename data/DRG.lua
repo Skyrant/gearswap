@@ -102,7 +102,7 @@ function init_gear_sets()
                                           hands="Peltast's Vambraces +1",
                                           feet="Pteroslaver Greaves +3" }
     sets.precast.JA['Deep Breathing'] = { head="Vishap Armet +3"}
-    sets.precast.JA['Angon']          = { ammo="Angon", hands="Pteroslaver Finger Gauntlets +1"}    
+    sets.precast.JA['Angon']          = { ammo="Angon", hands="Pteroslaver Finger Gauntlets +1"}
     sets.precast.JA['Dragon Breaker'] = { } --Currently no gear available
     sets.precast.JA['Fly High']       = { } --Currently no gear available
 
@@ -139,9 +139,10 @@ function init_gear_sets()
     sets.Jump = {}
 
     sets.Jump.HP = {
-        legs="Vishap Brais +3", feet="Pteroslaver Greaves +3"
+        legs="Vishap Brais +3", feet="Pteroslaver Greaves +3",
+        back="Updraft Mantle"
     }
-    
+
     sets.Jump.Crit = {
         legs="Peltast's Cuissots +1", feet="Valorous Greaves"
     }
@@ -155,7 +156,13 @@ function init_gear_sets()
         back="Updraft Mantle", legs="Vishap Brais +3"
     }
 
-    sets.SmitingBreath  = { head="Vishap Armet +3", neck="Lancer's Torque" }
+    sets.SmitingBreath  = {
+        head="Vishap Armet +3",
+        ear1="Enmerkar Earring",
+        hands="Vishap Finger Gauntlets +3",
+        neck="Lancer's Torque", -- neck="Adad Amulet",
+        back=BrigantiaSTR
+    }
 
     ---------------------------------------------------------------------------
     -- Weapon Skills ----------------------------------------------------------
@@ -197,12 +204,21 @@ function init_gear_sets()
     })
 
     sets.precast.WS.Magical = set_combine(sets.precast.WS, {
-        ammo="Knobkierrie",
-        head="Highwing Helm",
-        body="Sulevia's Platemail +2",
-        hands="Sulevia's Gauntlets +2",
-        legs="Vishap Brais +3",
-        feet="Sulevia's Leggings +2"
+        ---------------------------------- Magic Attack Bonus -----------------
+        ammo="Pemphredo Tathlum",       -- 04
+        head="Highwing Helm",           -- 20
+        neck="Sanctity Necklace",       -- 10
+        ear1="Friomisi Earring",        -- 10
+        ear2="Hecate's Earring",        -- 06
+        body="Jumalik Mail",            -- 20
+        hands="Leyline Gloves",         -- 15
+        ring1="Shiuva Ring +1",         -- 03
+        ring2="Shiva Ring",
+        back="Toro Cape",               -- 10
+        waist="Eschan Stone",           -- 07
+        legs="Flamma Dirs +2",
+        feet="Flamma Gambieras +2"
+        --------------------------------- 105 MAB -----------------------------
     })
 
     ---------------------------------------------------------------------------
@@ -218,6 +234,27 @@ function init_gear_sets()
         back=BrigantiaDEX,
     })
 
+    sets.precast.WS['Leg Sweep'] = set_combine(sets.precast.WS.Magical, {
+        ---------------------------------- Magic Accuracy ---------------------
+        ammo="Pemphredo Tathlum",       -- 08
+        head="Flamma Zucchetto +2",     -- 44
+        neck="Sanctity Necklace",       -- 10
+        ear1="Lifestorm Earring",
+        ear2="Psystorm Earring",        -- 12
+        body="Flamma Korazin +2",       -- 46
+        hands="Flamma Manopolas +2",    -- 43
+        ring1="Niqmaddu Ring",
+        ring2="Ramuh Ring +1",
+        --back="Aput Mantle +1",        -- 11
+        waist="Eschan Stone",           -- 07
+        legs="Flamma Dirs +2",          -- 39
+        feet="Flamma Gambieras +2"      -- 42
+        --------------------------------- 262 M.Acc. --------------------------
+    })
+
+    ---------------------------------------------------------------------------
+    -- Defensive Sets ---------------------------------------------------------
+    ---------------------------------------------------------------------------
     sets.defense.PDT = {
         ammo="Ginsen",
         head="Sulevia's Mask +2",
@@ -257,7 +294,7 @@ function init_gear_sets()
     -- Engaged Sets -----------------------------------------------------------
     ---------------------------------------------------------------------------
     sets.engaged = {
-        main="Trishula",
+        --main="Trishula",
         sub="Utu Grip",
         ammo="Ginsen",
         head="Flamma Zucchetto +2",
@@ -398,7 +435,7 @@ function job_pretarget(spell, action, spellMap, eventArgs)
     -- If Wyvern is not present default to regular Jumps
     if spell.english == "Spirit Jump" then
         if not pet.isvalid then
-            cancel_spell()        
+            cancel_spell()
             send_command('Jump')
         end
     elseif spell.english == "Soul Jump" then
@@ -461,7 +498,7 @@ end
 function job_aftercast(spell, action, spellMap, eventArgs)
     if player.hpp < 25 then
     classes.CustomClass = "Reraise"
-    end 
+    end
     if state.HybridMode.value == 'Reraise' or
     (state.HybridMode.value == 'Physical' and state.PhysicalDefenseMode.value == 'Reraise') then
         equip(sets.Reraise)
@@ -538,7 +575,7 @@ function job_buff_change(buff, gain)
     if string.lower(buff) == "sleep" and gain and player.hp > 200 then
         equip(sets.Berserker)
     elseif string.lower(buff) == "hasso" and gain == false then
-        send_command("Hasso")
+        send_command('input /ja "Hasso" <me>')
     elseif string.lower(buff) == "Deep Breathing" and gain == false then
         send_command("Deep Breathing")
     else

@@ -75,7 +75,7 @@ function get_sets()
 
 	sets.TP.Accuracy = {ammo="Mantoptera Eye",
 				head="Ayanmo Zucchetto +1",neck="Iqabi Necklace", ear1="Bladeborn Earring", ear2="Steelflash Earring",
-				body="Ayanmo Corazza +2",hands="Ayanmo Manopolas +1",ring1="Ramuh Ring +1",ring2="Ilabrat Ring",
+				body="Ayanmo Corazza +2",hands="Ayanmo Manopolas +2",ring1="Ramuh Ring +1",ring2="Ilabrat Ring",
 				back="Rosmerta's Cape",waist="Anguinus Belt",legs="Carmine Cuisses +1",feet="Ayanmo Gambieras +1"}
 
 	sets.TP.DT = {ammo="Ginsen",
@@ -245,7 +245,7 @@ function get_sets()
 	sets.RDM.EnSpells = {
 		neck="Colossus's torque",
 		ear1="Andoaa Earring",
-		hands="Ayanmo Manopolas +1",
+		hands="Ayanmo Manopolas +2",
 		waist="Olympus Sash",
 		legs="Carmine Cuisses +1"
 	}

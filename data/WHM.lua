@@ -317,7 +317,7 @@ function init_gear_sets()
 
     sets.idle.PDT = {main="Bolelabunga", sub="Genbu's Shield",ammo="Homiliary",
         head="Ayanmo Zucchetto +1",neck="Loricate Torque +1",ear1="Handler's Earring",ear2="Handler's Earring +1",
-        body="Shamash Robe",hands="Ayanmo Manopolas +1",ring1=LeftDarkRing, ring2=RightDarkRing,
+        body="Shamash Robe",hands="Ayanmo Manopolas +2",ring1=LeftDarkRing, ring2=RightDarkRing,
         back="Solemnity Cape",legs="Ayanmo Cosciales +2",feet="Ayanmo Gambieras +1"
     }
 

@@ -229,7 +229,7 @@ function init_gear_sets()
 
 	sets.midcast['Dark Magic'] = {}
 
-  sets.midcast['Aspir'] = {main="Rubicundity",range="Pemphredo Tathlum",
+	sets.midcast['Aspir'] = {main="Rubicundity",range="Pemphredo Tathlum",
       head="Striga Crown",neck="Aesir Torque",ear1="Psystorm Earring",ear2="Lifestorm Earring",
       body="Psycloth Vest",hands="Merlinic Dastanas",ring1="Strendu Ring",ring2="Sangoma Ring",
       back="Bane Cape",waist="Fucho-no-Obi",legs="Telchine Braconi",feet=MerlinicDrain}
@@ -259,7 +259,7 @@ function init_gear_sets()
 	sets.midcast.Pet.PhysicalBloodPactRage = {main="Gridarvor",sub="Elan Strap",ammo="Sancus Sachet +1",
 		head="Apogee Crown +1",neck="Shulmanu Collar", ear1="Lugalbanda Earring", ear2="Gelos Earring",
 		body="Convoker's Doublet +3",hands="Apogee Mitts +1",ring1="Varar Ring",ring2="Varar Ring",
-		back="Campestres's Cape",waist="Incarnation Sash",legs="Apogee Slacks +1",feet="Convoker's Pigaches +3"}
+		back="Campestres's Cape",waist="Regal Belt",legs="Apogee Slacks +1",feet="Convoker's Pigaches +3"}
 
 	sets.midcast.Pet.PhysicalBloodPactRage.Acc = set_combine(sets.midcast.Pet.PhysicalBloodPactRage, {
 		body="Convoker's Doublet +3", feet="Convoker's Pigaches +3", ring1="Thurandaut Ring"
@@ -270,7 +270,7 @@ function init_gear_sets()
 	sets.midcast.Pet.HybridBloodPactRage = {main="Grioavolr",sub="Elan Strap",ammo="Sancus Sachet +1",
 		head="Apogee Crown +1",neck="Shulmanu Collar", ear1="Lugalbanda Earring", ear2="Gelos Earring",
 		body="Convoker's Doublet +3",hands="Apogee Mitts +1",ring1="Varar Ring",ring2="Varar Ring",
-		back="Campestres's Cape",waist="Incarnation Sash",legs="Enticer's Pants",feet="Convoker's Pigaches +3"}
+		back="Campestres's Cape",waist="Regal Belt",legs="Enticer's Pants",feet="Convoker's Pigaches +3"}
 
 	sets.midcast.Pet.HybridBloodPactRage.Acc = set_combine(sets.midcast.Pet.PhysicalBloodPactRage, {
 		body="Convoker's Doublet +3", feet="Convoker's Pigaches +3", ring1="Thurandaut Ring"
@@ -281,7 +281,7 @@ function init_gear_sets()
 	sets.midcast.Pet.MagicalBloodPactRage = {main="Grioavolr",sub="Elan Strap",ammo="Sancus Sachet +1",
 		head="Apogee Crown +1",neck="Adad Amulet", ear1="Lugalbanda Earring", ear2="Gelos Earring",
 		body="Convoker's Doublet +3",hands="Apogee Mitts +1",ring1="Varar Ring",ring2="Varar Ring",
-		back="Campestres's Cape",waist="Incarnation Sash",legs="Apogee Slacks +1",feet="Convoker's Pigaches +3"}
+		back="Campestres's Cape",waist="Regal Belt",legs="Apogee Slacks +1",feet="Convoker's Pigaches +3"}
 
 	sets.midcast.Pet.MagicalBloodPactRage.Acc = set_combine(sets.midcast.Pet.MagicalBloodPactRage, {
 		body="Convoker's Doublet +3", feet="Convoker's Pigaches +3", ring1="Thurandaut Ring"
@@ -367,7 +367,7 @@ function init_gear_sets()
 	sets.idle.Avatar = set_combine(sets.idle, { main="Gridarvor",sub="Elan Strap",ammo="Sancus Sachet +1",
 		head="Convoker's Horn +1",neck="Caller's Pendant",ear1="Enmerkar Earring", ear2="Domesticator's Earring",
 		body="Convoker's Doublet +3",hands="Inyanga Dastanas +2",ring1="Evoker's Ring",ring2="Thurandaut Ring",
-		back="Campestres's Cape", waist="Incarnation Sash", legs="Assiduity Pants +1", feet="Beckoner's Pigaches +1"
+		back="Campestres's Cape", waist="Regal Belt", legs="Assiduity Pants +1", feet="Beckoner's Pigaches +1"
 	})
 	-- Favor uses Empyrean instead of AF for Refresh --------------------------
 	sets.idle.Avatar.Favor = {head="Beckoner's Horn +1"}
