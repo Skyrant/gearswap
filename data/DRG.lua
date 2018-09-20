@@ -57,7 +57,7 @@ function user_setup()
     BreathHeals   = S{"Healing Breath I","Healing Breath II","Healing Breath III","Healing Breath IV"}
 
     ---------------------------------------------------------------------------
-    -- Additional local binds (! = alt, @ = windows, ^ = ctrl)-----------------
+    -- Additional local binds (! = alt, @ = windows, ^ = ctrl) ----------------
     ---------------------------------------------------------------------------
     send_command('bind ^` input /ja "Hasso" <me>')
     send_command('bind !` input /ja "Seigan" <me>')
@@ -86,7 +86,7 @@ end
 -- Define sets and vars used by this job file.
 function init_gear_sets()
     --------------------------------------
-    -- Start defining the sets
+    -- Start defining the sets -----------
     --------------------------------------
     sets.CapacityMantle = {back="Mecistopins Mantle"}
 
@@ -111,8 +111,8 @@ function init_gear_sets()
     ---------------------------------------------------------------------------
     sets.precast.JA.Jump = {
         ammo="Ginsen",
-        head="Sulevia's Mask +2", neck="Shulmanu Collar", ear1="Bladeborn Earring", ear2="Steelflash Earring",
-        body="Sulevia's Platemail +2", hands="Sulevia's Gauntlets +2", ring1="Rajas Ring", ring2="Ramuh Ring +1",
+        head="Vishap Armet +3", neck="Dragoon's Collar +1", ear1="Bladeborn Earring", ear2="Steelflash Earring",
+        body="Sulevia's Platemail +2", hands="Sulevia's Gauntlets +2", ring1="Regal Ring", ring2="Ramuh Ring +1",
         back=BrigantiaSTR, waist="Windbuffet Belt +1", legs="Flamma Dirs +1", feet="Flamma Gambieras +2"
     }
 
@@ -173,7 +173,7 @@ function init_gear_sets()
         neck="Fotia Gorget",
         ear1="Cessance Earring",
         ear2="Sherida Earring",
-        ring1="Ramuh Ring +1",
+        ring1="Regal Ring",
         ring2="Niqmaddu Ring",
         back=BrigantiaSTR,
         waist="Fotia Belt",
@@ -187,7 +187,7 @@ function init_gear_sets()
     sets.precast.WS.MultiHit = set_combine(sets.precast.WS, {
         ammo="Knobkierrie",
         head="Flamma Zucchetto +2",
-        neck="Shulmanu Collar",
+        neck="Dragoon's Collar +1",
         body="Sulevia's Platemail +2",
         hands="Sulevia's Gauntlets +2",
         legs="Sulevia's Cuisses +2",
@@ -196,7 +196,7 @@ function init_gear_sets()
 
     sets.precast.WS.SingleHit = set_combine(sets.precast.WS, {
         ammo="Knobkierrie",
-        head="Flamma Zucchetto +2",
+        head="Vishap Armet +3",
         body="Sulevia's Platemail +2",
         hands="Sulevia's Gauntlets +2",
         legs="Vishap Brais +3",
@@ -224,9 +224,9 @@ function init_gear_sets()
     ---------------------------------------------------------------------------
     -- Exceptiopns for specific Weaponskills ----------------------------------
     ---------------------------------------------------------------------------
-    sets.precast.WS['Geirskogul'] = set_combine(sets.precast.WS.WeaponSkillDamage, {
+    sets.precast.WS['Geirskogul'] = set_combine(sets.precast.WS, {
         ammo="Knobkierrie",
-        head="Highwing Helm",
+        head="Vishap Armet +3",
         body="Flamma Korazin +2",
         hands="Flamma Manopolas +2",
         legs="Flamma Dirs +1",
@@ -298,7 +298,7 @@ function init_gear_sets()
         sub="Utu Grip",
         ammo="Ginsen",
         head="Flamma Zucchetto +2",
-        neck="Shulmanu Collar",
+        neck="Dragoon's Collar +1",
         ear1="Cessance Earring",
         ear2="Sherida Earring",
         body="Flamma Korazin +2",
@@ -331,7 +331,7 @@ function init_gear_sets()
     sets.engaged.Acc = set_combine(sets.engaged.STP, {
         sub="Utu Grip",
         ammo="Ginsen",
-        neck="Shulmanu Collar",
+        neck="Dragoon's Collar +1",
         ear1="Cessance Earring",
         ear2="Sherida Earring",
         ring1="Niqmaddu Ring",
@@ -379,7 +379,7 @@ function init_gear_sets()
     sets.idle.Town = set_combine(sets.idle, {
         ammo="Ginsen",
         head="Twilight Helm",
-        neck="Shulmanu Collar",
+        neck="Dragoon's Collar +1",
         ear1="Bladeborn Earring",
         ear2="Steelflash Earring",
         body="Twilight Mail",

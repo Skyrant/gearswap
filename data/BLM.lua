@@ -269,17 +269,8 @@ function init_gear_sets()
     --    back="Umbra Cape",waist="Hierarch Belt",legs="Hagondes Pants",feet="Herald's Gaiters"}
 
     -- Idle mode scopes:
-    -- Idle mode when weak.
-    sets.idle.Weak = {main="Bolelabunga",sub="Genbu's Shield",ammo="Impatiens",
-        head="Hagondes Hat",neck="Loricate Collar",ear1="Infused Earring", ear2="Moonshade Earring",
-        body="Hagondes Coat",hands="Yaoyotl Gloves",ring1="Defending Ring",ring2="Paguroidea Ring",
-        back="Umbra Cape",waist="Hierarch Belt",legs="Nares Trews",feet="Hagondes Sabots"}
-
     -- Town gear.
-    --sets.idle.Town = {main="Lathi", sub="Zuuxowu Grip",ammo="Impatiens",
-    --    head="Hagondes Hat",neck="Sanctity Necklace",ear1="Infused Earring", ear2="Moonshade Earring",
-    --    body="Hagondes Coat",hands="Yaoyotl Gloves",ring1="Sheltered Ring",ring2="Paguroidea Ring",
-    --    back="Swith Cape",waist="Witful Belt",legs="Hagondes Pants",feet="Herald's Gaiters"}
+    sets.idle.Town = set_combine(sets.idle, {feet="Herald's Gaiters"})
 
     -- Defense sets
 

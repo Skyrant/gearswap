@@ -158,7 +158,7 @@ function init_gear_sets()
         left_ear="Mendicant's Earring",     --05%
         right_ear="Glorious Earring",       --00%/02%
         body="Theophany Briault +3",        --00%/06%
-        hands="Theophany Mitts +2",         --00%/02%
+        hands="Theophany Mitts +3",         --00%/02%
         left_ring="Lebeche Ring",           --03%
         right_ring="Sirona's ring",
         back="Alaunus's Cape",              --10%
@@ -223,7 +223,7 @@ function init_gear_sets()
     -- Aquaveil ---------------------------------------------------------------
     ---------------------------------------------------------------------------
     sets.midcast['Aquaveil'] = set_combine(sets.midcast['Enhancing Magic'], {
-        main="Vadose Rod",
+        main="Vadose Rod", hands="Regal Cuffs"
     })
 
     ---------------------------------------------------------------------------
@@ -291,14 +291,14 @@ function init_gear_sets()
     sets.midcast.MndEnfeebles = set_combine(sets.midcast, {
         main="Vadose Rod",sub="Ammurapi Shield",
         head="Befouled Crown",neck="Henic Torque",ear1="Psystorm Earring",ear2="Lifestorm Earring",
-        body="Vanya Robe",ring1="Persis Ring",ring2="Kishar Ring",
+        body="Vanya Robe",hand="Regal Cuffs",ring1="Persis Ring",ring2="Kishar Ring",
         waist="Tengu-no-Obi",legs="Vanya Slops",feet="Piety Duckbills +1"
     })
 
     sets.midcast.IntEnfeebles = set_combine(sets.midcast, {
         main="Vadose Rod",sub="Ammurapi Shield",
         head="Nahtirah Hat",neck="Weike Torque",ear1="Psystorm Earring",ear2="Lifestorm Earring",
-        body="Vanya Robe",ring1="Icesoul Ring",ring2="Kishar Ring",
+        body="Vanya Robe",hands="Regal Cuffs",ring1="Icesoul Ring",ring2="Kishar Ring",
         back="Refraction Cape",legs="Vanya Slops",feet="Piety Duckbills"
     })
 
@@ -316,15 +316,15 @@ function init_gear_sets()
     }
 
     sets.idle.PDT = {main="Bolelabunga", sub="Genbu's Shield",ammo="Homiliary",
-        head="Ayanmo Zucchetto +1",neck="Loricate Torque +1",ear1="Handler's Earring",ear2="Handler's Earring +1",
+        head="ayanmo zucchetto +2",neck="Loricate Torque +1",ear1="Handler's Earring",ear2="Handler's Earring +1",
         body="Shamash Robe",hands="Ayanmo Manopolas +2",ring1=LeftDarkRing, ring2=RightDarkRing,
-        back="Solemnity Cape",legs="Ayanmo Cosciales +2",feet="Ayanmo Gambieras +1"
+        back="Solemnity Cape",legs="Ayanmo Cosciales +2",feet="Ayanmo Gambieras +2"
     }
 
     sets.AfflatusSolace = sets.idle
     sets.AfflatusMisery = sets.idle.PDT
 
-    sets.idle.Town = sets.idle
+    sets.idle.Town = set_combine(sets.idle, {feet="Herald's Gaiter1s"})
     sets.idle.Weak = sets.idle.PDT
     sets.resting = sets.idle
 

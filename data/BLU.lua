@@ -51,7 +51,7 @@ function get_sets()
 	sets.Idle.Standard = {main="Sequence", sub="Colada", ammo="Ginsen",
 			head="Rawhide Mask",neck="Sanctity Necklace", ear1="Moonshade Earring", ear2="Suppanomimi",
 			body="Jhakri Robe +2",hands="Adhemar Wristbands +1",ring1="Hetairoi Ring",ring2="Epona's Ring",
-			back="Atheling Mantle",waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Ayanmo Gambieras +1"
+			back="Atheling Mantle",waist="Windbuffet Belt +1",legs="Carmine Cuisses +1",feet="Ayanmo Gambieras +2"
 	}
 
 	sets.Idle.DT = {ammo="Ginsen",
@@ -74,17 +74,17 @@ function get_sets()
 				back="Rosmerta's Cape",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Herculean Boots"}
 
 	sets.TP.Accuracy = {ammo="Mantoptera Eye",
-				head="Ayanmo Zucchetto +1",neck="Iqabi Necklace", ear1="Bladeborn Earring", ear2="Steelflash Earring",
+				head="ayanmo zucchetto +2",neck="Iqabi Necklace", ear1="Bladeborn Earring", ear2="Steelflash Earring",
 				body="Ayanmo Corazza +2",hands="Ayanmo Manopolas +2",ring1="Ramuh Ring +1",ring2="Ilabrat Ring",
-				back="Rosmerta's Cape",waist="Anguinus Belt",legs="Carmine Cuisses +1",feet="Ayanmo Gambieras +1"}
+				back="Rosmerta's Cape",waist="Anguinus Belt",legs="Carmine Cuisses +1",feet="Ayanmo Gambieras +2"}
 
 	sets.TP.DT = {ammo="Ginsen",
-				head="Ayanmo Zucchetto +1",neck="Loricate Torque +1", ear2="Suppanomimi",
+				head="ayanmo zucchetto +2",neck="Loricate Torque +1", ear2="Suppanomimi",
 				body="Ayanmo Corazza +2",
-				back="Solemnity Cape",waist="Flume belt",legs="Herculean trousers",feet="Ayanmo Gambieras +1"}
+				back="Solemnity Cape",waist="Flume belt",legs="Herculean trousers",feet="Ayanmo Gambieras +2"}
 
 	sets.TP.STP = {ammo="Ginsen",
-				head="Ayanmo Zucchetto +1",neck="Asperity necklace", ear1="Cessance Earring", ear2="Brutal Earring",
+				head="ayanmo zucchetto +2",neck="Asperity necklace", ear1="Cessance Earring", ear2="Brutal Earring",
 				body="Ayanmo Corazza +2",hands="Herculean Gloves",ring1="Ilabrat Ring",ring2="Rajas ring",
 				back="Atheling mantle",waist="Kentarch Belt",legs="Carmine Cuisses +1"}
 
@@ -123,9 +123,9 @@ function get_sets()
 		back="Cornflower Cape",waist="Fotia belt", legs="Jhakri Slops +2", feet="Jhakri Pigaches +2"}
 
 	sets.WS.VorpalBlade = {ammo="Mantoptera Eye",
-		head="Ayanmo Zucchetto +1",neck="Fotia Gorget",ear1="Steelflash Earring",ear2="Bladeborn Earring",
+		head="ayanmo zucchetto +2",neck="Fotia Gorget",ear1="Steelflash Earring",ear2="Bladeborn Earring",
 		body="Abnoba Kaftan",hands="Jhakri Cuffs +2",ring1="Ramuh Ring +1",ring2="Ilabrat Ring",
-		back="Rosmerta's Cape",waist="Fotia belt",legs="Carmine Cuisses +1",feet="Ayanmo Gambieras +1"}
+		back="Rosmerta's Cape",waist="Fotia belt",legs="Carmine Cuisses +1",feet="Ayanmo Gambieras +2"}
 
 	sets.WS.Expiacion = sets.WS.Requiescat
 	sets.WS.CircleBlade = sets.WS.Requiescat
@@ -136,7 +136,7 @@ function get_sets()
 	sets.BlueMagic = {}
 
 	sets.BlueMagic.STR = {ammo="Mantoptera eye",
-		head="Ayanmo Zucchetto +1",ear1="Bladeborn earring",ear2="Dudgeon earring",
+		head="ayanmo zucchetto +2",ear1="Bladeborn earring",ear2="Dudgeon earring",
 		body="Assim. Jubbah +3",ring1="Apate Ring",ring2="Ilabrat Ring",
 		back="Cornflower cape"}
 

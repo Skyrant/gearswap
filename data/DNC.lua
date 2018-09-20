@@ -251,9 +251,9 @@ function init_gear_sets()
         body="Rawhide Vest",hands="Herculean Gloves",ring1="Rajas Ring",ring2="Epona's Ring",
         back="Senuna's Mantle",waist="Kentarch Belt",legs="Herculean Trousers",feet="Herculean Boots"}
     sets.engaged.Acc = {ammo="Yamarang",
-		head="Meghanada Visor +1", neck="Iqabi Necklace", ear1="Dudgeon Earring", ear2="Heartseeker Earring",
+		head="Meghanada Visor +2", neck="Iqabi Necklace", ear1="Dudgeon Earring", ear2="Heartseeker Earring",
 		body="Meghanada Cuirie +2",	hands="Meghanada Gloves +2", ring1="Ramuh Ring +1",	ring2="Rajas Ring",
-		back="Senuna's Mantle", waist="Anguinus Belt", legs="Meghanada Chausses +1", feet="Meghanada Jambeaux +2"}
+		back="Senuna's Mantle", waist="Anguinus Belt", legs="Meghanada Chausses +2", feet="Meghanada Jambeaux +2"}
     sets.engaged.Evasion = {ammo="Charis Feather",
         head="Felistris Mask",neck="Ej Necklace",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
         body="Qaaxo Harness",hands="Iuitl Wristbands",ring1="Beeline Ring",ring2="Epona's Ring",

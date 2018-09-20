@@ -244,7 +244,7 @@ function init_gear_sets()
     -- Abyssea Groups ('Club', 'Dagger', 'GreatKatana', 'Polearm', 'Scythe', 'Staff', 'Sword', 'Ninjutsu')
     sets.engaged.Club = {main="Deae Gratia", sub=empty}
     sets.engaged.Dagger = {main="Ternion Dagger", sub=empty}
-    sets.engaged.GreatKatana = {main="Lotus Katana", sub=empty}
+    sets.engaged.GreatKatana = {main="Zanmato +1", sub=empty}
     sets.engaged.Polearm = {main="Pitchfork", sub=empty}
     sets.engaged.Scythe = {main="Ark Scythe", sub=empty}
     sets.engaged.Staff = {main="Mekki Shakki", sub=empty}
