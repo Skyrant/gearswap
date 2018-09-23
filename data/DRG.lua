@@ -96,7 +96,7 @@ function init_gear_sets()
     -- Job Abilities ----------------------------------------------------------
     ---------------------------------------------------------------------------
     sets.precast.JA['Spirit Surge']   = { body="Pteroslaver Mail +3" }
-    sets.precast.JA['Call Wyvern']    = { body="Pteroslaver Mail +3" }
+    sets.precast.JA['Call Wyvern']    = { body="Pteroslaver Mail +3", neck="Dragoon's Collar", hands="Crusher Gauntlets", back="Updraft Mantle", legs="Vishap Brais +3", feet="Pteroslaver Greaves +3" }
     sets.precast.JA['Ancient Circle'] = { legs="Vishap Brais +3" }
     sets.precast.JA['Spirit Link']    = { head="Vishap Armet +3",
                                           hands="Peltast's Vambraces +1",
@@ -112,39 +112,32 @@ function init_gear_sets()
     sets.precast.JA.Jump = {
         ammo="Ginsen",
         head="Vishap Armet +3", neck="Dragoon's Collar +1", ear1="Bladeborn Earring", ear2="Steelflash Earring",
-        body="Sulevia's Platemail +2", hands="Sulevia's Gauntlets +2", ring1="Regal Ring", ring2="Ramuh Ring +1",
-        back=BrigantiaSTR, waist="Windbuffet Belt +1", legs="Flamma Dirs +1", feet="Flamma Gambieras +2"
+        body="Pteroslaver Mail +3", hands="Sulevia's Gauntlets +2", ring1="Regal Ring", ring2="Ramuh Ring +1",
+        back=BrigantiaSTR, waist="Ioskeha Belt", legs="Vishap Brais +3", feet="Vishap Greaves +3"
     }
 
-    sets.precast.JA['High Jump'] = set_combine(sets.precast.JA.Jump, {
-        legs="Vishap Brais +3"
-    })
-
-    sets.precast.JA['Soul Jump'] = set_combine(sets.precast.JA.Jump, {
-        head = "Flamma Zucchetto +2",
-        body = "Pteroslaver Mail +3", hands = "Sulevia's Gauntlets +2",
-        back = BrigantiaSTR, waist = "Ioskeha Belt"
-    })
-    sets.precast.JA['Spirit Jump'] = set_combine(sets.precast.JA.Jump, {
-        head = "Flamma Zucchetto +2",
-        body = "Pteroslaver Mail +3", hands = "Sulevia's Gauntlets +2",
-        back = BrigantiaSTR, waist = "Ioskeha Belt"
-    })
-
-    sets.precast.JA['Super Jump'] = sets.precast.JA.Jump
+    sets.precast.JA['High Jump']   = sets.precast.JA.Jump
+    sets.precast.JA['Soul Jump']   = sets.precast.JA.Jump
+    sets.precast.JA['Spirit Jump'] = sets.precast.JA.Jump
+    sets.precast.JA['Super Jump']  = sets.precast.JA.Jump
 
     ---------------------------------------------------------------------------
     -- Augment sets based on your Jump Mode setting ---------------------------
     ---------------------------------------------------------------------------
     sets.Jump = {}
 
-    sets.Jump.HP = {
-        legs="Vishap Brais +3", feet="Pteroslaver Greaves +3",
-        back="Updraft Mantle"
+    sets.Jump.HP = { 
+        body="Pteroslaver Mail +3",
+        neck="Dragoon's Collar",
+        hands="Crusher Gauntlets",
+        back="Updraft Mantle",
+        legs="Vishap Brais +3",
+        feet="Pteroslaver Greaves +3"
     }
 
     sets.Jump.Crit = {
-        legs="Peltast's Cuissots +1", feet="Valorous Greaves"
+        legs="Peltast's Cuissots +1",
+        feet="Valorous Greaves"
     }
 
     ---------------------------------------------------------------------------
@@ -159,7 +152,7 @@ function init_gear_sets()
     sets.SmitingBreath  = {
         head="Vishap Armet +3",
         ear1="Enmerkar Earring",
-        hands="Vishap Finger Gauntlets +3",
+        hands="Vishap Finger Gauntlets +2",
         neck="Lancer's Torque", -- neck="Adad Amulet",
         back=BrigantiaSTR
     }
@@ -461,10 +454,9 @@ end
 function job_post_precast(spell, action, spellMap, eventArgs)
     if spell.english:endswith("Jump") then
         if state.JumpMode.value then
-            -- equip the Wyvern HP based items
-            equip(sets.Jump.Crit)
-        else
             -- equip the Critical Hit Damage based items
+        else
+            -- equip the Maximum HP based items
             equip(sets.Jump.HP)
         end
     end
