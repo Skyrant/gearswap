@@ -101,7 +101,6 @@ function init_gear_sets()
     -- Special sets (required by rules)
     --------------------------------------
 
-    sets.TreasureHunter = {head="White Rarab Cap +1", hands="Plunderer's Armlets +1", waist="Chaac Belt", feet="Skulker's Poulaines"}
     sets.Kiting = {feet="Skadi's Jambeaux +1"}
 
     sets.buff['Sneak Attack'] = {ammo="Qirmiz Tathlum",
@@ -125,8 +124,8 @@ function init_gear_sets()
         legs="Meghanada Chausses +2",
     })
 
-
     -- Actions we want to use to tag TH.
+    sets.TreasureHunter = {hands="Plunderer's Armlets +1", waist="Chaac Belt", feet="Skulker's Poulaines"}
     sets.precast.Step = sets.TreasureHunter
     sets.precast.Flourish1 = sets.TreasureHunter
     sets.precast.JA.Provoke = sets.TreasureHunter
@@ -209,7 +208,7 @@ function init_gear_sets()
     sets.precast.WS['Mercy Stroke'].TA = set_combine(sets.precast.WS['Mercy Stroke'].Mod, {ammo="Qirmiz Tathlum"})
     sets.precast.WS['Mercy Stroke'].SATA = set_combine(sets.precast.WS['Mercy Stroke'].Mod, {ammo="Qirmiz Tathlum",legs="Lustratio Subligar"})
     sets.precast.WS['Mercy Stroke'].Reive = set_combine(sets.precast.WS['Mercy Stroke'], {ammo="Qirmiz Tathlum",neck="Ygnas's Resolve +1"})
-	
+
     sets.precast.WS['Exenterator'] = set_combine(sets.precast.WS, {ring1="Stormsoul Ring",legs="Nahtirah Trousers"})
     sets.precast.WS['Exenterator'].Acc = set_combine(sets.precast.WS['Exenterator'], {ammo="Yamarang", back="Letalis Mantle"})
     sets.precast.WS['Exenterator'].Mod = set_combine(sets.precast.WS['Exenterator'], {head="Felistris Mask",waist="Fotia Belt"})
@@ -385,7 +384,7 @@ function init_gear_sets()
         back="Canny Cape",waist="Anguinus Belt",legs="Meghanada Chausses +2", feet="Meghanada Jambeaux +2"}
 
     sets.engaged.TreasureHunter = set_combine(sets.engaged, {
-        main="Sandung", sub="Thief's Knife", hands="Plunderer's Armlets +1", waist="Chaac Belt", feet="Skulker's Poulaines"})
+        main="Sandung", sub="Thief's Knife", neck="Sanctity Necklace",hands="Plunderer's Armlets +1", waist="Chaac Belt", feet="Skulker's Poulaines"})
 
     sets.engaged.Swords = {main="Tanmogayi +1", sub="Malevolence"}
 

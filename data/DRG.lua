@@ -129,8 +129,7 @@ function init_gear_sets()
     sets.Jump.HP = { 
         body="Pteroslaver Mail +3",
         neck="Dragoon's Collar",
-        hands="Crusher Gauntlets",
-        back="Updraft Mantle",
+        hands="Vishap Finger Gauntlets +2",
         legs="Vishap Brais +3",
         feet="Pteroslaver Greaves +3"
     }
