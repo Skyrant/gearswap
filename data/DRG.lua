@@ -126,7 +126,7 @@ function init_gear_sets()
     ---------------------------------------------------------------------------
     sets.Jump = {}
 
-    sets.Jump.HP = { 
+    sets.Jump.HP = {
         body="Pteroslaver Mail +3",
         neck="Dragoon's Collar",
         hands="Vishap Finger Gauntlets +2",
@@ -454,6 +454,7 @@ function job_post_precast(spell, action, spellMap, eventArgs)
     if spell.english:endswith("Jump") then
         if state.JumpMode.value then
             -- equip the Critical Hit Damage based items
+            equip(sets.Jump.Crit)
         else
             -- equip the Maximum HP based items
             equip(sets.Jump.HP)

@@ -447,6 +447,7 @@ function customize_melee_set(meleeSet)
     if state.Buff['Voidwatcher'] then
         meleeSet = set_combine(meleeSet, sets.buff.Voidwatcher)
     end
+    windower.add_to_chat(16, 'customize melee set:')
     return meleeSet
 end
 

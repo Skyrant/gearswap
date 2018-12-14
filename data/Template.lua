@@ -43,17 +43,17 @@ function user_unload()
 end
 
 function init_gear_sets()
-	
+
 	--------------------------------------
 	-- Precast sets
 	--------------------------------------
-	
+
 	-- Sets to apply to arbitrary JAs
 	sets.precast.JA['No Foot Rise'] = {body="Etoile Casaque +2"}
-	
+
 	-- Sets to apply to any actions of spell.type
 	sets.precast.Waltz = {}
-		
+
 	-- Sets for specific actions within spell.type
 	sets.precast.Waltz['Healing Waltz'] = {}
 
@@ -69,26 +69,22 @@ function init_gear_sets()
 	-- Specific weaponskill sets.
 	sets.precast.WS['Exenterator'] = set_combine(sets.precast.WS, {})
 
-	
 	--------------------------------------
 	-- Midcast sets
 	--------------------------------------
 
     -- Generic spell recast set
 	sets.midcast.FastRecast = {}
-		
+
 	-- Specific spells
 	sets.midcast.Utsusemi = {}
 
-	
 	--------------------------------------
 	-- Idle/resting/defense/etc sets
 	--------------------------------------
-	
 	-- Resting sets
 	sets.resting = {head="Ocelomeh Headpiece +1",neck="Wiglen Gorget",
 		ring1="Sheltered Ring",ring2="Paguroidea Ring"}
-	
 
 	-- Idle sets
 	sets.idle = {}
@@ -97,12 +93,12 @@ function init_gear_sets()
 		head="Whirlpool Mask",neck="Charis Necklace",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
 		body="Charis Casaque +2",hands="Iuitl Wristbands",ring1="Sheltered Ring",ring2="Paguroidea Ring",
 		back="Atheling Mantle",waist="Patentia Sash",legs="Kaabnax Trousers",feet="Skadi's Jambeaux +1"}
-	
+
 	sets.idle.Weak = {ammo="Charis Feather",
 		head="Whirlpool Mask",neck="Wiglen Gorget",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
 		body="Manibozho Jerkin",hands="Buremte Gloves",ring1="Sheltered Ring",ring2="Paguroidea Ring",
 		back="Iximulew Cape",waist="Flume Belt",legs="Kaabnax Trousers",feet="Skadi's Jambeaux +1"}
-	
+
 	-- Defense sets
 	sets.defense.PDT = {}
 
@@ -119,7 +115,7 @@ function init_gear_sets()
 	-- sets if more refined versions aren't defined.
 	-- If you create a set with both offense and defense modes, the offense mode should be first.
 	-- EG: sets.engaged.Dagger.Accuracy.Evasion
-	
+
 	-- Normal melee group
 	sets.engaged = {}
 	sets.engaged.Acc = {}

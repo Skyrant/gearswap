@@ -207,12 +207,38 @@ function init_gear_sets()
         back="Taranus's Cape",          -- 05%          +20     +20     +10
         --waist="Hachirin-no-Obi",
         legs="Merlinic Shalwar",        -- 10%          +49     +44     +27
-        feet=MerlinicBurst              -- 10%          +24     +12     +42
-    ------------------------------- Total: 40%/10%     +219    +220    +219
+        feet=MerlinicBurst              -- 10%          +24     +32     +49
+    ------------------------------- Total: 40%/10%     +223    +240    +226
     ----------------------------Set Total:             +187    +192    +184
     ------------------------ EA Set Total:             +202    +197    +165
     ----------------------- +EA Set Total:             +227    +250    +190
         })
+    --- item        MAB     INT     MAC     MAB
+    --- EA Hat +1   07/07   43      50      38
+    --- Neck +2     10/00   15      30      07
+    --- EA Body +1  09/09   48      52      44
+    --- EA Hands+1  06/06   40      49      35
+    --- EA Slops+1  08/08   48      51      41
+    --- EA Pigs+1   05/05   05      48      32
+    ---             45/35  199     280     197
+
+    --- EA Hat +1   07/07   43      50      38
+    --- Neck +2     10/00   15      30      07
+    --- EA Body +1  09/09   48      52      44
+    --- Archmage+3  20/00   36      38      50
+    --- Archfeet+3  00/00   30      42      54
+    --- Archpant+3  00/03   50      46      58
+    ---             46/19  222     258     251
+    ---             +1/-16 +23     -22     +54
+
+    --- EA Hat +1   07/07   43      50      38
+    --- Neck +2     10/00   15      30      07
+    --- EA Body +1  09/09   48      52      44
+    --- Archmage+3  20/00   36      38      50
+    --- Alamslop+1  00/00   40      20      60
+    --- Almfeet+1   00/00   21      20      52
+    ---             46/16  203     210     251
+
 
 
     sets.midcast['Death'] = { main="Lathi",sub="Niobid Strap",ammo="Ombre Tathlum +1",
@@ -349,7 +375,7 @@ function job_aftercast(spell, action, spellMap, eventArgs)
             enable('feet')
             equip(sets.buff['Mana Wall'])
             disable('feet')
-        elseif spell.skill == 'Elemental Magic' then
+        --elseif spell.skill == 'Elemental Magic' then
             --state.MagicBurst:reset()
         end
     end

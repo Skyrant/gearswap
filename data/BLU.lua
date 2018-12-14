@@ -127,8 +127,12 @@ function get_sets()
 		body="Abnoba Kaftan",hands="Jhakri Cuffs +2",ring1="Ramuh Ring +1",ring2="Ilabrat Ring",
 		back="Rosmerta's Cape",waist="Fotia belt",legs="Carmine Cuisses +1",feet="Ayanmo Gambieras +2"}
 
+	sets.WS.CircleBlade = {ammo="Mantoptera Eye",
+		head="Jhakri Coronal +2",neck="Fotia Gorget",ear1="Hecate's Earring",ear2="Friomisi Earring",
+		body="Jhakri Robe +2",hands="Regal Cuffs",ring1="Ilbrat Ring",ring2="Apate Ring",
+		back="Toro Cape",waist="Fotia Belt",legs="Jhakri Slops +2",feet="Jhakri Pigaches +2"}
+
 	sets.WS.Expiacion = sets.WS.Requiescat
-	sets.WS.CircleBlade = sets.WS.Requiescat
 	sets.WS.Realmrazer = sets.WS.Requiescat
 	sets.WS.Blackhalo = sets.WS.Requiescat
 
@@ -507,6 +511,7 @@ function weathercheck(spell_element)
 		equip({waist="Hachirin-no-Obi"})
 		send_command('@input /echo Using Element Obi')
 	else
+		equip({waist="Anguinus Belt"})
 	end
 end
 
@@ -535,7 +540,7 @@ function set_macro_page(set,book)
                 add_to_chat(123,'Error setting macro page: Macro set ('..tostring(set)..') must be between 1 and 10.')
                 return
         end
- 
+
         if book then
                 if not tonumber(book) then
                         add_to_chat(123,'Error setting macro page: book is not a valid number ('..tostring(book)..').')
