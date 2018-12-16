@@ -153,10 +153,10 @@ function init_gear_sets()
     ---------------------------------------------------------------------------
     sets.midcast.Cure = set_combine(sets.midcast, {
         main="Queller Rod",                 --10%/02%
-        head="Ebers Cap",                   --13%
+        head="Ebers Cap +1",                --16%
         neck="Nodens Gorget",               --05%
-        left_ear="Mendicant's Earring",     --05%
-        right_ear="Glorious Earring",       --00%/02%
+        ear1="Mendicant's Earring",         --05%
+        ear2="Glorious Earring",            --00%/02%
         body="Theophany Briault +3",        --00%/06%
         hands="Theophany Mitts +3",         --00%/02%
         left_ring="Lebeche Ring",           --03%
@@ -164,7 +164,7 @@ function init_gear_sets()
         back="Alaunus's Cape",              --10%
         legs="Ebers Pantaloons +1",
         feet="Vanya Clogs"                  --05%
-    ----------------------------------- Cure: 51% - Cure II: 12% - Total: 51% -
+    ----------------------------------- Cure: 51% - Cure II: 12% - Total: 62% -
     })
 
     ---------------------------------------------------------------------------
@@ -179,10 +179,11 @@ function init_gear_sets()
     -- Curaga Set (MND > Healing Magic Skill) ---------------------------------
     ---------------------------------------------------------------------------
     sets.midcast.Curaga = set_combine(sets.midcast, {
-        main="Vadose Rod",
+        main="Vadose Rod",                  --16%
         sub="Ammurapi Shield",
         neck="Mizu. Kubikazari",
-        ear1="Nourishing Earring +1",
+        ear1="Mendicant's Earring",          --05%
+        ear2="Nourishing Earring +1",
         body="Shamash Robe",
         hands="Inyanga Dastanas +2",
         ring1="Persis Ring",
@@ -197,14 +198,14 @@ function init_gear_sets()
     ---------------------------------------------------------------------------
     sets.midcast.Cursna = set_combine(sets.midcast, {
         main="Queller Rod",
-        head="Ebers Cap", --neck="Malison Medallion",
+        head="Ebers Cap +1", --neck="Malison Medallion",
         body="Vanya Robe", hands="Inyanga Dastanas +2", --Fanatic Gloves (SR)
         ring2="Sirona's Ring",      -- Haoma's Ring, Ephedra Ring
         legs="Theophany Pantaloons +1",feet="Vanya Clogs" --Gende. Galosh. +1
     })
 
-    sets.midcast.Erase = set_combine(sets.midcast, {head="Ebers Cap"})
-    sets.midcast['Healing Magic'] = set_combine(sets.midcast, {head="Ebers Cap"})
+    sets.midcast.Erase = set_combine(sets.midcast, {head="Ebers Cap +1"})
+    sets.midcast['Healing Magic'] = set_combine(sets.midcast, {head="Ebers Cap +1"})
 
     ---------------------------------------------------------------------------
     -- Enhancing Magic Set (Caps at 500)---------------------------------------
