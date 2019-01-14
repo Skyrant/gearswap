@@ -102,7 +102,7 @@ function init_gear_sets()
                                           hands="Peltast's Vambraces +1",
                                           feet="Pteroslaver Greaves +3" }
     sets.precast.JA['Deep Breathing'] = { head="Vishap Armet +3"}
-    sets.precast.JA['Angon']          = { ammo="Angon", hands="Pteroslaver Finger Gauntlets +1"}
+    sets.precast.JA['Angon']          = { ammo="Angon", hands="Pteroslaver Finger Gauntlets +3"}
     sets.precast.JA['Dragon Breaker'] = { } --Currently no gear available
     sets.precast.JA['Fly High']       = { } --Currently no gear available
 
@@ -181,7 +181,7 @@ function init_gear_sets()
         head="Flamma Zucchetto +2",
         neck="Dragoon's Collar +1",
         body="Sulevia's Platemail +2",
-        hands="Sulevia's Gauntlets +2",
+        hands="Pteroslaver Finger Gauntlets +3",
         legs="Sulevia's Cuisses +2",
         feet="Flamma Gambieras +2",
     })
@@ -190,7 +190,7 @@ function init_gear_sets()
         ammo="Knobkierrie",
         head="Vishap Armet +3",
         body="Sulevia's Platemail +2",
-        hands="Sulevia's Gauntlets +2",
+        hands="Pteroslaver Finger Gauntlets +3",
         legs="Vishap Brais +3",
         feet="Sulevia's Leggings +2"
     })

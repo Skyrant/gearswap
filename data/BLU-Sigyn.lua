@@ -433,7 +433,7 @@ function get_sets()
 	sets.BlueMagic.Skill = {
 	ammo="Mavi Tathlum",
     head="Luhlaza Keffiyeh +1",
-    body="Assimilator's Jubbah +2",
+    body="Assimilator's Jubbah +3",
     hands="Rawhide Gloves",
     legs="Hashishin tayt +1",
     feet="Luhlaza Charuqs +1",

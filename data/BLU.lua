@@ -74,7 +74,7 @@ function get_sets()
 				back="Rosmerta's Cape",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Herculean Boots"}
 
 	sets.TP.Accuracy = {ammo="Mantoptera Eye",
-				head="ayanmo zucchetto +2",neck="Iqabi Necklace", ear1="Bladeborn Earring", ear2="Steelflash Earring",
+				head="ayanmo zucchetto +2",neck="Sanctity Necklace", ear1="Bladeborn Earring", ear2="Steelflash Earring",
 				body="Ayanmo Corazza +2",hands="Ayanmo Manopolas +2",ring1="Ramuh Ring +1",ring2="Ilabrat Ring",
 				back="Rosmerta's Cape",waist="Anguinus Belt",legs="Carmine Cuisses +1",feet="Ayanmo Gambieras +2"}
 

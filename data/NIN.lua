@@ -224,7 +224,7 @@ function init_gear_sets()
     
     -- Normal melee groups
     sets.engaged = {main="Kanaria", sub="Kanaria", ammo="Seki Shuriken",
-        head="Adhemar Bonnet +1",neck="Iqabi Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
+        head="Adhemar Bonnet +1",neck="Sanctity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
         body="Adhemar Jacket +1",hands="Hizamaru Kote +1",ring1="Apate Ring",ring2="Ramuh Ring +1",
         back="Yokaze Mantle",waist="Anguinus Belt",legs="Hizamaru Hizayoroi +1",feet="Hizamaru Sune-ate +1"}
     

@@ -145,7 +145,7 @@ function init_gear_sets()
 
     -- Waltz set (chr and vit)
     sets.precast.Waltz = {ammo="Sonia's Plectrum",
-        head="Meghanada Visor +2",
+        head="Pillager's Bonnet +3",
         body="Pillager's Vest +3",
         hands="Buremte Gloves",
         ring1="Asklepian Ring", ring2="Valseur's Ring",
@@ -153,7 +153,7 @@ function init_gear_sets()
         waist="Caudata Belt",
         legs="Pillager's Culottes +1",
         feet="Rawhide Boots"}
-
+    
     -- Don't need any special gear for Healing Waltz.
     sets.precast.Waltz['Healing Waltz'] = {}
 
@@ -170,7 +170,7 @@ function init_gear_sets()
         ring2="Lebeche Ring",
         back="Solemnity Cape",
         waist="Gishdubar Sash",
-        legs="Samnuha Tights",
+        legs="Pillager's Culottes +3",
         feet="Jute Boots"}
 
     sets.precast.FC.Utsusemi = set_combine(sets.precast.FC, {neck="Magoraga Beads"})
@@ -185,13 +185,13 @@ function init_gear_sets()
     sets.precast.WS = {ammo="Ginsen",
         head="Pillager's Bonnet +3",neck="Fotia Gorget", ear1="Sherida Earring", ear2="Cessance Earring",
         body="Plunderer's Vest +3",hands="Meghanada Gloves +2",ring1="Ramuh Ring +1",ring2="Ilabrat Ring",
-        back="Toutatis's Cape", waist="Fotia Belt",legs="Samnuha Tights",feet="Meghanada Jambeaux +2"}
+        back="Toutatis's Cape", waist="Fotia Belt",legs="Pillager's Culottes +3",feet="Meghanada Jambeaux +2"}
 
     sets.precast.WS.Acc = set_combine(sets.precast.WS, {ammo="Yamarang"})
     sets.precast.WS.CP = set_combine(sets.precast.WS, {back="Aptitude Mantle"})
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
-	sets.precast.WS['Mercy Stroke'] = set_combine(sets.precast.WS, { head="Meghanada Visor +2", ring1="Apate Ring"})
+	sets.precast.WS['Mercy Stroke'] = set_combine(sets.precast.WS, { head="Pillager's Bonnet +3", ring1="Apate Ring"})
     sets.precast.WS['Mercy Stroke'].Acc = set_combine(sets.precast.WS['Mercy Stroke'], {ammo="Yamarang", back="Letalis Mantle"})
     sets.precast.WS['Mercy Stroke'].Mod = set_combine(sets.precast.WS['Mercy Stroke'], {head="Felistris Mask",waist="Fotia Belt"})
     sets.precast.WS['Mercy Stroke'].SA = set_combine(sets.precast.WS['Mercy Stroke'].Mod, {ammo="Qirmiz Tathlum",legs="Lustratio Subligar"})
@@ -249,7 +249,7 @@ function init_gear_sets()
     sets.precast.WS['Aeolian Edge'] = {ammo="Ombre Tathlum +1",
         head="Pillager's Bonnet +3",neck="Sanctity Necklace",ear1="Friomisi Earring",ear2="Hecate's Earring",
         body="Samnuha Coat",hands="Pillager's Armlets +3",ring1="Shiva Ring +1",ring2="Ramuh Ring +1",
-        back="Toro Cape",waist="Chaac Belt",legs="Samnuha Tights",feet="Herculean Boots"}
+        back="Toro Cape",waist="Chaac Belt",legs="Pillager's Culottes +3",feet="Herculean Boots"}
 
     sets.precast.WS['Aeolian Edge'].TH = set_combine(sets.precast.WS['Aeolian Edge'], sets.TreasureHunter)
 
@@ -274,7 +274,7 @@ function init_gear_sets()
         back="Toutatis's Cape",legs="Kaabnax Trousers",feet="Iuitl Gaiters +1"}
 
     -- Ranged gear
-    sets.midcast.RA = {
+    --[[sets.midcast.RA = {
         head="Meghanada Visor +2",
         neck="Sanctity Necklace",
         ear1="Clearview Earring",ear2="Volley Earring",
@@ -289,6 +289,7 @@ function init_gear_sets()
     sets.midcast.RA.Acc = set_combine( sets.midcast.RA, {
 
     })
+    ]]--
 
     --------------------------------------
     -- Idle/resting/defense sets
@@ -304,7 +305,7 @@ function init_gear_sets()
     sets.idle = {ammo="Ginsen",
         head="Adhemar Bonnet +1", neck="Sanctity Necklace",ear1="Infused Earring",ear2="Moonshade Earring",
         body="Samnuha Coat",hands="Adhemar Wristbands +1",ring1=LeftDarkRing,ring2=RightDarkRing,
-        back="Toutatis's Cape",waist="Flume Belt",legs="Samnuha Tights",feet="Jute Boots +1"}
+        back="Toutatis's Cape",waist="Flume Belt",legs="Pillager's Culottes +3",feet="Jute Boots +1"}
 
     sets.idle.Regen = set_combine(sets.idle, {neck="Wiglen Gorget", ring1="Sheltered Ring"})
 
@@ -322,7 +323,7 @@ function init_gear_sets()
         body="Qaaxo Harness",hands="Plun. Armlets +1",ring1="Defending Ring",ring2="Beeline Ring",
         back="Toutatis's Cape",waist="Flume Belt",legs="Kaabnax Trousers",feet="Iuitl Gaiters +1"}
 
-    sets.defense.PDT = {ammo="Iron Gobbet",
+    --[[sets.defense.PDT = {ammo="Iron Gobbet",
         head="Meghanada Visor +2",
         neck="Loricate Torque +1",
         ear1="", ear2="",
@@ -333,6 +334,7 @@ function init_gear_sets()
         waist="Flume Belt",
         legs="Meghanada Chausses +2",
         feet="Meghanada Jambeaux +2"}
+    ]]--
 
     sets.defense.MDT = set_combine ( sets.defense.PDT, {
 
@@ -345,7 +347,7 @@ function init_gear_sets()
         main=gear.ShijoC, sub=gear.ShijoD, ammo="Yamarang",
         head="Adhemar Bonnet +1",neck="Asperity Necklace",ear1="Sherida Earring",ear2="Brutal Earring",
         body="Pillager's Vest +3",hands="Adhemar Wristbands +1",ring1="Hetairoi Ring",ring2="Epona's Ring",
-        back="Toutatis's Cape",waist="Windbuffet Belt +1",legs="Samnuha Tights",feet="Herculean Boots"}
+        back="Toutatis's Cape",waist="Windbuffet Belt +1",legs="Pillager's Culottes +3",feet="Herculean Boots"}
 
     sets.engaged.DualWield = set_combine(sets.engaged, {
         neck="Sanctity Necklace",ear1="Dudgeon Earring",ear2="Heartseeker Earring"})
@@ -354,7 +356,7 @@ function init_gear_sets()
         back="Atheling Mantle"})
 
     sets.engaged.Acc= {main=gear.ShijoC, sub=gear.ShijoD, ammo="Yamarang",
-        head="Meghanada Visor +2",neck="Iqabi Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
+        head="Pillager's Bonnet +3",neck="Sanctity Necklace",ear1="Steelflash Earring",ear2="Bladeborn Earring",
         body="Pillager's Vest +3",hands="Meghanada Gloves +2",ring1="Rajas Ring",ring2="Ramuh Ring +1",
         back="Toutatis's Cape",waist="Anguinus Belt",legs="Meghanada Chausses +2", feet="Meghanada Jambeaux +2"}
 
@@ -363,12 +365,13 @@ function init_gear_sets()
 
     sets.engaged.Swords = {main="Tanmogayi +1", sub="Malevolence"}
 
-    sets.engaged.PDT = {
+    --[[sets.engaged.PDT = {
         head="Meghanada Visor +2", neck="Loricate Torque +1", ear1="Etiolation Earring",
         body="Meghanada Cuirie +2", hands="Meghanada Gloves +2", ring1=LeftDarkRing, ring2=RightDarkRing,
         back="Solemnity Cape", waist="Flume Belt", legs="Meghanada Chausses +2", feet="Meghanada Jambeaux +2"}
+    ]]--
 
-        sets.engaged.MDT = {main="Sandung", sub="Eminent Dagger",
+    sets.engaged.MDT = {main="Sandung", sub="Eminent Dagger",
         head="Uk'uxkaj Cap",neck="Warder's Charm +1",ear1="Dudgeon Earring",ear2="Heartseeker Earring",
         body="Plunderer's Vest +1",hands="Skulker's Armlets +1",ring1='Shadow Ring', ring2="Archon Ring",
         back="Toutatis's Cape",waist="Anguinus Belt",legs="Kaabnax Trousers",feet="Herculean Boots"}

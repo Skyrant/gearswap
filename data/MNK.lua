@@ -220,7 +220,7 @@ function init_gear_sets()
         body="Qaaxo Harness",hands="Hesychast's Gloves +1",ring1="Rajas Ring",ring2="Epona's Ring",
         back="Atheling Mantle",waist="Anguinus Belt",legs="Hesychast's Hose +1",feet="Anchorite's Gaiters +1"}
     sets.engaged.Acc = {ammo="Ginsen",
-        head="Whirlpool Mask",neck="Iqabi Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
+        head="Whirlpool Mask",neck="Sanctity Necklace",ear1="Bladeborn Earring",ear2="Steelflash Earring",
         body="Otronif Harness +1",hands="Hesychast's Gloves +1",ring1="Rajas Ring",ring2="Ramuh Ring +1",
         back="Letalis Mantle",waist="Anguinus Belt",legs="Manibozho Brais",feet="Qaaxo Leggings"}
     sets.engaged.Mod = {ammo="Thew Bomblet",
